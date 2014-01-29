@@ -1,0 +1,29 @@
+
+	.questions{
+		float:center;
+	}
+		
+	body {
+	background-image:url(images/awesome.jpg);
+	background-repeat:repeat;
+	
+
+	}
+				}
+	.links {
+				margin-bottom: 150px;
+				float: center;
+			}
+
+	h1 {
+		font-size: 50px;
+		margin-left: 40%;
+		color: white;
+	}
+
+	a{
+	
+		font-size: 50px;
+		margin-left: 41%;
+		color: white;
+	}

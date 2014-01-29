@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Registration Form</title>
+<link rel="stylesheet" type="text/javascript" href="stylescontact.css">
+<script src="jquery.js"></script>
+<script src="jquery1.js"></script>
+  
+
+  <script>
+  
+  
+  $(function() {
+  
+    
+    $("#contact-form").validate({
+    
+        // Specify the validation rules
+        rules: {
+            firstname: "required",
+            lastname: "required",
+            email: {
+                required: true,
+                email: true
+            }
+        },
+            
+        
+        // Specify the validation error messages
+        messages: {
+            firstname: "Please enter your first name",
+            lastname: "Please enter your last name",
+            email: "Please enter a valid email address"
+        },
+        
+        submitHandler: function(form) {
+            form.submit();
+        }
+      });
+
+  });
+  </script>
+</head>
+<body>
+  <h1>Contact Us</h1>
+
+  
+  <form id="contact-form">
+    <div class="label">First Name</div><input type="text" id="firstname" name="firstname" /><br />
+    <div class="label">Last Name</div><input type="text" id="lastname" name="lastname" /><br />
+    <div class="label">Email</div><input type="text" id="email" name="email" /><br />
+    <div style="margin-left:50px;"><input type="submit" name="submit" value="Submit" /></div>
+  </form>
+  
+</body>
+</html>

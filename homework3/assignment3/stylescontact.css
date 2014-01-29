@@ -1,0 +1,36 @@
+html {
+	margin: 0px;
+	padding: 0px;
+}
+		
+	body {
+	background-image:url(images/contact.jpg);
+	background-repeat:repeat;
+	
+
+	}
+				}
+	.links {
+				margin-bottom: 150px;
+				float: center;
+			}
+
+	h1 {
+		font-size: 50px;
+		margin-left: 40%;
+		color: white;
+	}
+
+	a{
+	
+		font-size: 50px;
+		margin-left: 41%;
+		color: white;
+	}
+
+	#contact-form{
+		margin-left: 42%;
+		font-size: 30px;
+		color: white;
+		font text-align: center;;
+	}

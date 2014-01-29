@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Registration Form</title>
+<link rel="stylesheet" type="text/javascript" href="styles.css">
+<script src="jquery.js"></script>
+<script src="jquery1.js"></script>
+  
+ 
+  <script>
+  
+ 
+  $(function() {
+  
+    
+    $("#register-form").validate({
+    
+        // Specify the validation rules
+        rules: {
+            firstname: "required",
+            lastname: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            password: {
+                required: true,
+                minlength: 5
+            },
+            phone: "required"
+        },
+        
+        // Specify the validation error messages
+        messages: {
+            firstname: "Please enter your first name",
+            lastname: "Please enter your last name",
+            password: {
+                required: "Please provide a password",
+                minlength: "Your password must be at least 5 characters long"
+            },
+            email: "Please enter a valid email address",
+            phone: "Please enter your number"
+        },
+        
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
+
+  });
+  
+  </script>
+</head>
+<body>
+  <h1>Register here</h1>
+
+  
+  <form id="register-form">
+  
+    <div class="label">First Name</div><input type="text" id="firstname" name="firstname" /><br />
+    <div class="label">Last Name</div><input type="text" id="lastname" name="lastname" /><br />
+    <div class="label">Email</div><input type="text" id="email" name="email" /><br />
+    <div class="label">Password</div><input type="password" id="password" name="password" /><br />
+	  <div class="label">Phone</div><input type="text" id="phone" name="phone" /><br />
+    <div style="margin-left:140px;"><input type="submit" name="submit" value="Submit" /></div>
+    
+  </form>
+  
+</body>
+</html>

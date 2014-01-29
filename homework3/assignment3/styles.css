@@ -1,0 +1,45 @@
+.links {
+				margin-bottom: 150px;
+				float: center;
+			}
+			
+	#cell11, #cell12, #cell21, #cell22 {
+		width: 100px;
+		height: 100px;
+		/* border style: upper right bottom left;*/
+		border-style: none solid solid none;
+		border-width: 10px;
+		border-color: black;
+	}
+
+	#cell13, #cell23 {
+		width: 100px;
+		height: 100px;
+		border-style: none none solid none;
+		border-width: 10px;
+		border-color: black;	
+	}
+
+	#cell31, #cell32{
+		width: 100px;
+		height: 100px;
+		border-style: none solid none none;
+		border-width: 10px;
+		border-color: black;
+		
+		}
+		
+	body {
+			background-color: gray;
+			margin-left: 36%;
+			margin-top: 10%;		
+	}
+	
+	h1 {
+		margin-left: 5%;
+	}
+	
+	a {
+		margin-left: 5%;
+	}
+

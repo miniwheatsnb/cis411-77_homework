@@ -1,0 +1,169 @@
+<html>
+<head>
+	<title>FAQ</title>
+	<link rel="stylesheet" type="text/javascript" href="stylesFAQ.css">
+	<script src="jquery.js"></script>
+	<script src="jquery1.js"></script>
+<script>
+	$(document).ready(function(){
+    $("#filter").keyup(function(){
+ 
+        // Retrieve the input field text and reset the count to zero
+        var filter = $(this).val(), count = 0;
+ 
+        // Loop through the comment list
+        $(".questions li").each(function(){
+ 
+            // If the list item does not contain the text phrase fade it out
+            if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                $(this).fadeOut();
+ 
+            // Show the list item if the phrase matches and increase the count by 1
+            } else {
+                $(this).show();
+                count++;
+            }
+        });
+ 
+        // Update the count
+        var numberItems = count;
+        $("#filter-count").text("Number of Stupid Questions = "+count);
+    });
+});
+</script>
+</head>
+<body>
+	
+	<form id="live-search" action="" class="styled" method="post">
+    <fieldset>
+        <input type="text" class="text-input" id="filter" value="20 Stupid Questions" />
+        <span id="filter-count"></span>
+        Enter Searchable Material
+    </fieldset>
+	</form>
+
+	<ol class="questions">
+		<li>Backward Thinking <br>
+		"I sold my only car to help pay for gas money, but now gas has come down in price. How do I get my car back?"
+		I tried to contact this guy, but it turns out that he also sold his computer to help pay for his Internet connection.
+		</li>
+		<br>
+		<li>
+		It's Caps Lock--Capisce?<br>
+		"HOW DO I TURN OFF CAPSLOCK? I ACCIDENTALLY TURNED IT ON YESTERDAY AND I DONT KNOW HOW TO TURN IT BACK OFF."
+		Note to self: Register howtoturnoffcapslock.com; make millions.
+		</li>
+		<br>
+		<li>
+		Credit Crunch<br>
+		"I wanted to see if my computer would read my credit card so i put it in the cd rom and it got stuck, how do i get it out?? I tryed toothpics but lost them in the process?? also the drive is making noises"
+		Oh, that's normal. Your system is just waiting for you to pay the required $1 processing fee for scanning the card. Simply fold a greenback into a tiny square and insert it into any USB port.
+		</li>
+		<br>
+		<li>
+		Mousin' Around<br>
+		"My mouse stop working every time i lift it up from the table why is this? this is not just OS .i have linux and vista both same thing so its not drivers"
+		Yeah, no big deal there, either: Insert your credit card into the CD-ROM drive and tell your computer--slowly and distinctly--that you need the Air Mouse 3000 upgrade. You'll be good in no time.
+		</li>
+		<br>
+		<li>
+		Technical Difficulties<br>
+		"I've been asked to write an application in my own handwriting....? is there a computer programme that will do this for me? they also want original ideas. do you know any?"
+		This reminds me of a letter to the editor I once read years ago: "Are there any undiscovered islands left in the world?" The response: "Not that we know of."
+		</li>
+		<br>
+		<li>
+		It's All in the Details<br>
+		"I have an assignment about computer.. What is unimportant details about computer?"
+		Wait a minute--does this assignment also require original ideas?
+		</li>
+		<br>
+		<li>
+		Unknown Nuptials<br>
+		"Am i married in any state? have i been divorced?"
+		I'll take "questions asked after a night in Vegas" for $500, Alex.
+		</li>
+		<br>
+		<li>
+		A Sticky Subject<br>
+		"Where can i buy a really big jar of peanut butter?"
+		If this is from the same guy who asked the previous question, I'm getting concerned.
+		</li>
+		<br>
+		<li>
+		Fruit Frets<br>
+		"I have ate two whole tangerines in about two hours what will happen to me?"
+		That all depends on whether you swallowed any seeds. If you did, be very careful not to eat any dirt or drink any water for the next two weeks.
+		</li>
+		<br>
+		<li>
+		Fat Chance<br>
+		"How do i become obese fast? I want to look good by the end of the year."
+		You can start by eating two tangerines in two hours. Then run around in circles until you figure out what "obese" means.
+		</li>
+		<br>
+		<li>
+		Cantaloupe Hunting<br>
+		"I thought cantelope was an animal!? i always thought that a cantaloupe was that animal that has the horns and they live in Arizona and stuff, but i was shopping for groceries yesterday and i saw they had cantaloupe meat on sale. so i was like yeah sure i'll try it, but what i saw, wasn't a cantaloupe. it was some white and green fruit thing! whats up with this?"
+		The store is guilty of mislabeling. The term it was looking for is "jackalope"--which is a cross between a jackfruit and a manila envelope.
+		</li>
+		<br>
+		<li>
+		Hey, Babby<br>
+		"How is babby formed????? how girl get pragnent?"
+		On the one hand, I kind of hope you never figure it out. On the other, maybe your parents don't know either--and it obviously didn't stop them.
+		</li>
+		<br>
+		<li>
+		An Academic Inquiry<br>
+		"Why are there school? is a point to it?"
+		There are school so you can learn how is babby formed, silly.
+		</li>
+		<br>
+		<li>
+		Canine Law<br>
+		"Is it illegal to name a dog after a movie?"
+		Only if that movie is Air Bud 2. As a practical matter, though, you might want to avoid calling out to your pooch on a crowded bus if you decide to name it "Bang Bang You're Dead" or "I'm Going to Explode."
+		</li>
+		<br>
+		<li>
+		Lost in Space<br>
+		"What is the best place to ask questions online? i mean, or there any QA forums like on yahoo or anything?"
+		Hmm...a forum-like place to ask questions on Yahoo. Nope, haven't heard of anything like that. But if you find something, be sure to let us know.
+		</li>
+		<br>
+		<li>
+		Mathematical Matters<br>
+		"Is there any possible way of making 2+2=5?"
+		The easiest way is to flip the positions of 4 and 5 on the number line. Another method is to use LSD (Least Sequential Denominators).
+		</li>
+		<br>
+		<li>
+		Sandwich Sensations<br>
+		"Is it possible to feel like a sandwich?"
+		Sure. It's called LSD (Lettuce, Succotash, and Dill-pickle). It feels, like, weird...
+		</li>
+		<br>
+		<li>
+		About Those Drugs...<br>
+		"How do you ask a question on yahoo answers?"
+		Hey, don't ask me. I'm still trying to find out if there's a forum-like place to pose questions there. Anyone? Anyone?
+		</li>
+		<br>
+		<li>
+		Spelling 101<br>
+		"How do you spell government?"
+		Most of the time.
+		</li>
+		<br>
+		<li>
+		Turtle Trouble<br>
+		"I was bitten by a turtle when i was a young lad, can i still drink orange juice?"
+		This is why old lads should be barred from Yahoo Answers. Seriously--where do they come up with this stuff?
+		</li>
+	</ol>
+
+
+</body>
+
+</html>

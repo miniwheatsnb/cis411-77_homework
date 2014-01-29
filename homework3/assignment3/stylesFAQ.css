@@ -1,0 +1,17 @@
+
+	.questions{
+		float:center;
+	}
+		
+	body {
+			background-image:url(images/sukster.jpg);
+			background-repeat:repeat;
+			font-size: 20px;
+			font-family: sans-serif;
+			color: white;
+				}
+	.links {
+				margin-bottom: 150px;
+				float: center;
+			}
+			
